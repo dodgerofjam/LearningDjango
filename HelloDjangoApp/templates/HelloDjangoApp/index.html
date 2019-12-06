@@ -1,11 +1,11 @@
 <html>
     <head>
         <title>{{ title }}</title>
+        {% load staticfiles %} <!-- Instruct Django to load static files -->
+        <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
     </head>
     <body>
-        <strong>{{ message }}</strong>
-        <br />
-        <br />
+        <span class="message"><h1>{{ message }}</h1></span>
         <i>{{ content }}</i>
     </body>
 </html>
